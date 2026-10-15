@@ -11,7 +11,13 @@ public class Main {
     private static final LocalDate DAY = LocalDate.of(2026, 10, 15);
     private static final DateTimeFormatter FORMAT = DateTimeFormatter.ofPattern("dd.MM HH:mm");
 
-    /** Запускает демонстрацию. @param args аргументы не используются */
+    private Main() {
+    }
+
+    /**
+     * Запускает демонстрацию.
+     * @param args аргументы не используются
+     */
     public static void main(String[] args) {
         BookingService service = new BookingService();
         List<Employee> employees = new ArrayList<>();

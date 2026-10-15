@@ -32,12 +32,18 @@ public class BookingService {
         rooms.add(room);
     }
 
-    /** @return неизменяемая копия списка помещений */
+    /**
+     * Возвращает помещения.
+     * @return неизменяемая копия списка помещений
+     */
     public List<Room> getRooms() {
         return List.copyOf(rooms);
     }
 
-    /** @return неизменяемая копия списка действующих броней */
+    /**
+     * Возвращает действующие брони.
+     * @return неизменяемая копия списка действующих броней
+     */
     public List<Booking> getBookings() {
         return List.copyOf(bookings);
     }
